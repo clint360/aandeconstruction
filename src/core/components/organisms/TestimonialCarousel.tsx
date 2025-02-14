@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import testimonials from "@/core/data/testimonials"; // Import testimonial data
-import Image from "next/image";
 
 const Testimonials = () => {
   return (
@@ -32,7 +31,7 @@ const Testimonials = () => {
                 
 
                 {/* Content */}
-                <p className="text-sm italic opacity-80">"{testimonial.quote}"</p>
+                <p className="text-sm italic opacity-80">&ldquo;{testimonial.quote}&ldquo;</p>
 
                 {/* Name & Position */}
                 <h4 className="mt-4 font-semibold text-lg text-[#FF9A25]">{testimonial.name}</h4>

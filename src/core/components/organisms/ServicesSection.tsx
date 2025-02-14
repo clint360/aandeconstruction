@@ -2,8 +2,8 @@
 import React from "react";
 import { services } from "@/core/data/services";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Button from "../atoms/Button";
+import Image from "next/image";
 
 export default function ServicesSection() {
   return (
@@ -32,7 +32,7 @@ export default function ServicesSection() {
               className="bg-white rounded-lg shadow-md overflow-hidden"
               whileHover={{ scale: 1.05 }}
             >
-              <img src={service.image} alt={service.title} className="w-full h-40 object-cover" />
+              <Image src={service.image} alt={service.title} className="w-full h-40 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 mt-2">{service.description}</p>
