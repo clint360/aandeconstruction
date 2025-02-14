@@ -1,6 +1,7 @@
 import { BreadcrumbImage } from '@/core/components/molecules/BreadcrumbImage'
 import Footer from '@/core/components/organisms/Footer'
 import Navbar from '@/core/components/organisms/Navbar'
+import VisionMissionSection from '@/core/components/organisms/VisionMissionSection'
 import React from 'react'
 
 function page() {
@@ -18,6 +19,7 @@ function page() {
                         At A & E Construction, we are a leading construction company based in Cameroon, dedicated to providing top-notch construction services and associated solutions. With years of industry experience, a team of skilled professionals, and a commitment to quality, we aim to deliver exceptional results that not only meet but exceed our clients' expectations.
                     </p>
                 </div>
+                <VisionMissionSection />
             </div>
             <Footer />
         </div>
