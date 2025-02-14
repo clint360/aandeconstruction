@@ -13,7 +13,6 @@ function page() {
             <BreadcrumbImage
                 title="About Us"
                 subtitle="Welcome to A & E Construction Company"
-                backgroundImage="/path-to-your-image.jpg"
             />
             <div className="flex flex-col items-center justify-center bg-white text-center p-8">
                 <motion.h2
