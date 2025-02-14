@@ -26,7 +26,7 @@ function page() {
                 </motion.h2>
                 <div className="max-w-3xl">
                     <p className="text-lg text-gray-700">
-                        At A &amp; E Construction, we are a leading construction company based in Cameroon, dedicated to providing top-notch construction services and associated solutions. With years of industry experience, a team of skilled professionals, and a commitment to quality, we aim to deliver exceptional results that not only meet but exceed our clients' expectations.
+                        At A &amp; E Construction, we are a leading construction company based in Cameroon, dedicated to providing top-notch construction services and associated solutions. With years of industry experience, a team of skilled professionals, and a commitment to quality, we aim to deliver exceptional results that not only meet but exceed our clients&lsquo; expectations.
                     </p>
                 </div>
             </div>
