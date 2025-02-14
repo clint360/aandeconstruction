@@ -87,6 +87,15 @@ a {
   font-size: 3.5rem;
 }
 
+@media screen and (max-width: 670px) {
+  .smallheadtag {
+    font-size: 1.2rem;
+  }
+  .biggerheadtag {
+    font-size: 2.9rem;
+  }
+}
+
 .descriptionfontsize {
   font-size: 1rem;
 }

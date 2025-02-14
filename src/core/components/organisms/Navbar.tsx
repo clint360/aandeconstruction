@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "./../../assets/logo.png"
+import logoi from "./../../assets/logoi.png"
 import { FaEnvelope } from "react-icons/fa";
 import Button from "../atoms/Button";
 
@@ -15,6 +16,7 @@ const Navbar = () => {
 
     const handleNav = () => {
         setNav(!nav);
+
     };
 
     useEffect(() => {
@@ -37,7 +39,7 @@ const Navbar = () => {
         >
             <div className="max-w-[1240px] m-auto flex justify-between items-center text-white pt-2 sm:p-4">
                 <Link href="/">
-                    <Image src={logo}
+                    <Image src={color === "transparent" ? logo : logoi}
                         alt="A&E Logo"
                         width={100}
                         height={50}
@@ -97,19 +99,25 @@ const Navbar = () => {
                             onClick={handleNav}
                             className="p-4 text-4xl hover:text-gray-500"
                         >
-                            <Link href="/#gallery">Gallery</Link>
+                            <Link href="/about">About</Link>
                         </li>
                         <li
                             onClick={handleNav}
                             className="p-4 text-4xl hover:text-gray-500"
                         >
-                            <Link href="/#portfolio">My roads</Link>
+                            <Link href="/services">Services</Link>
                         </li>
                         <li
                             onClick={handleNav}
                             className="p-4 text-4xl hover:text-gray-500"
                         >
-                            <Link href="/#contact">Contact</Link>
+                            <Link href="/projects">Projects</Link>
+                        </li>
+                        <li
+                            onClick={handleNav}
+                            className="p-4 text-4xl hover:text-gray-500"
+                        >
+                            <Link href="/contact-us">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
