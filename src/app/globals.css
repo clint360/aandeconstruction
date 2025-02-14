@@ -90,3 +90,7 @@ a {
 .descriptionfontsize {
   font-size: 1rem;
 }
+
+.overlaystyle {
+  background: rgba(0, 0, 0, 0.863);
+}
