@@ -12,7 +12,7 @@ export default function VisionMissionSection() {
           className="text-4xl font-semibold text-[#FF9A25] mb-12"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1 }}
         >
           Our Vision, Mission & Values
@@ -23,7 +23,7 @@ export default function VisionMissionSection() {
           className="bg-white p-8 shadow-lg rounded-lg mb-10"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1 }}
         >
           <h3 className="text-2xl font-semibold text-[#FF9A25] mb-4">Our Vision</h3>
@@ -39,7 +39,7 @@ export default function VisionMissionSection() {
           className="bg-white p-8 shadow-lg rounded-lg mb-10"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1 }}
         >
           <h3 className="text-2xl font-semibold text-[#FF9A25] mb-4">Our Mission</h3>

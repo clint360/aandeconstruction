@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Button from '../atoms/Button';
 import { FaServicestack, FaEnvelope } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Hero = () => {
   // Array of background images
@@ -49,6 +50,7 @@ const Hero = () => {
         we aim to deliver exceptional results that not only meet but exceed our clients’ expectations.
       </p>
       <div className="flex justify-center items-center space-x-4">
+      <Link href='/services'>
       <Button
         text="Our Services"
         bgColor="bg-[#FF9A25]"
@@ -56,6 +58,8 @@ const Hero = () => {
         icon={<FaServicestack />}
         onClick={() => console.log("Button 1 clicked!")}
       />
+      </Link>
+      <Link href='/contact-us'>
       <Button
         text="Contact Us"
         bgColor="bg-transparent"
@@ -64,6 +68,7 @@ const Hero = () => {
         icon={<FaEnvelope />}
         onClick={() => console.log("Button 2 clicked!")}
       />
+      </Link>
     </div>
     </div>
   </div>
