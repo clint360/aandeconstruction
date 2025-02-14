@@ -6,6 +6,7 @@ import VisionMissionSection from "@/core/components/organisms/VisionMissionSecti
 import ServicesSection  from "@/core/components/organisms/ServicesSection";
 import TestimonialsCarousel from "@/core/components/organisms/TestimonialCarousel";
 import Contact from "@/core/components/organisms/Contact";
+import Footer from "@/core/components/organisms/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ServicesSection />
       <TestimonialsCarousel />
       <Contact />
+      <Footer />
     </div>
   );
 }
