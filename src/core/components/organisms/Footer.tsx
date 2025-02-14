@@ -12,7 +12,7 @@ const Footer = () => {
         <div>
           <Image src={logo} alt="Logo" width={100} height={50} />
           <p className="mt-4 text-gray-400">
-            Your go-to platform for seamless food ordering and delivery. We connect you with the best restaurants.
+            Your go-to company for the best building and construction deals accross the country.
           </p>
         </div>
 
