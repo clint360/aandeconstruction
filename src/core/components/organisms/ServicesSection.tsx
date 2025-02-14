@@ -1,6 +1,9 @@
+"use client"
+import React from "react";
 import { services } from "@/core/data/services";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Button from "../atoms/Button";
 
 export default function ServicesSection() {
   return (
@@ -15,7 +18,7 @@ export default function ServicesSection() {
         >
           Our Services
         </motion.h2>
-        
+
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8"
           initial={{ opacity: 0 }}
@@ -45,11 +48,10 @@ export default function ServicesSection() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <Link href="/services">
-            <a className="px-6 py-3 text-lg font-semibold bg-[#FF9A25] text-white rounded-lg shadow-lg hover:bg-orange-600 transition">
-              See More Services
-            </a>
-          </Link>
+          <Button
+            text="See More"
+            bgColor="bg-[#FF9A25]"
+            textColor="text-white" />
         </motion.div>
       </div>
     </section>

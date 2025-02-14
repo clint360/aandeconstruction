@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-
+import CountUp from "react-countup";
 import { motion } from "framer-motion";
 
 export default function VisionMissionSection() {
@@ -126,52 +126,43 @@ export default function VisionMissionSection() {
 
         {/* Stats Section */}
         <motion.div
-          className="text-center mb-12"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1, delay: 0.2 }}
-        >
-          <h3 className="text-3xl font-semibold text-[#FF9A25] mb-6">Build Your Dream with Us</h3>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-gray-700">
+      className="relative py-16 text-white"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 1, delay: 0.2 }}
+      style={{
+        background: "linear-gradient(135deg, #111827, #1F2937)",
+      }}
+    >
+      <div className="container mx-auto text-center px-6">
+        <h3 className="text-3xl font-semibold text-[#FF9A25] mb-6">
+          Build Your Dream with Us
+        </h3>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-gray-300">
+          {[
+            { end: 512, label: "Successfully Project Finished" },
+            { end: 25, suffix: "+", label: "Years of experience with pride" },
+            { end: 1, suffix: "M+", label: "Revenue in 2024 investment" },
+            { end: 1520, suffix: "+", label: "Colleagues & counting more daily" },
+          ].map(({ end, suffix = "", label }, index) => (
             <motion.div
+              key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+              className="bg-gray-800/50 p-6 rounded-lg shadow-md"
             >
-              <h4 className="text-2xl font-bold text-[#FF9A25]">25+</h4>
-              <p>Successfully Project Finished</p>
+              <h4 className="text-3xl font-bold text-[#FF9A25]">
+                <CountUp end={end} duration={20} separator="," suffix={suffix} />
+              </h4>
+              <p className="text-lg">{label}</p>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <h4 className="text-2xl font-bold text-[#FF9A25]">25+</h4>
-              <p>Years of experience with pride</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.7 }}
-            >
-              <h4 className="text-2xl font-bold text-[#FF9A25]">1M+</h4>
-              <p>Revenue in 2024 investment</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-            >
-              <h4 className="text-2xl font-bold text-[#FF9A25]">1520+</h4>
-              <p>Colleagues & counting more daily</p>
-            </motion.div>
-          </div>
-        </motion.div>
+          ))}
+        </div>
+      </div>
+    </motion.div>
       </div>
     </section>
   );

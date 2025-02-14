@@ -59,7 +59,7 @@ const Navbar = () => {
                         <Link href="/projects">Projects</Link>
                     </li>
                     <li className="p-4">
-                        <Link href="/#contact">
+                        <Link href="/contact-us">
                             <Button
                                 text="Contact Us"
                                 bgColor="bg-[#FF9A25]"
