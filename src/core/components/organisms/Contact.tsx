@@ -12,7 +12,7 @@ const Contact = () => {
         className="max-w-3xl mx-auto text-center"
       >
         <h2 className="text-3xl font-semibold text-[#FF9A25] mb-6">Get In Touch</h2>
-        <p className="text-gray-600">We’d love to hear from you! Fill out the form below and we'll get back to you shortly.</p>
+        <p className="text-gray-600">We&quot;d love to hear from you! Fill out the form below and we'll get back to you shortly.</p>
       </motion.div>
 
       <motion.form
