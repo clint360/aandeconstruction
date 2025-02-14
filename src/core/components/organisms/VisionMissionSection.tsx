@@ -11,7 +11,8 @@ export default function VisionMissionSection() {
         <motion.h2
           className="text-4xl font-semibold text-[#FF9A25] mb-12"
           initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1 }}
         >
           Our Vision, Mission & Values
@@ -21,7 +22,8 @@ export default function VisionMissionSection() {
         <motion.div
           className="bg-white p-8 shadow-lg rounded-lg mb-10"
           initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1 }}
         >
           <h3 className="text-2xl font-semibold text-[#FF9A25] mb-4">Our Vision</h3>
@@ -36,7 +38,8 @@ export default function VisionMissionSection() {
         <motion.div
           className="bg-white p-8 shadow-lg rounded-lg mb-10"
           initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1 }}
         >
           <h3 className="text-2xl font-semibold text-[#FF9A25] mb-4">Our Mission</h3>
@@ -51,13 +54,15 @@ export default function VisionMissionSection() {
         <motion.div
           className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
           <motion.div
             className="bg-white p-6 shadow-lg rounded-lg text-center"
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h4 className="text-xl font-semibold text-[#FF9A25] mb-4">Quality</h4>
@@ -69,7 +74,8 @@ export default function VisionMissionSection() {
           <motion.div
             className="bg-white p-6 shadow-lg rounded-lg text-center"
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <h4 className="text-xl font-semibold text-[#FF9A25] mb-4">Integrity</h4>
@@ -81,7 +87,8 @@ export default function VisionMissionSection() {
           <motion.div
             className="bg-white p-6 shadow-lg rounded-lg text-center"
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <h4 className="text-xl font-semibold text-[#FF9A25] mb-4">Innovation</h4>
@@ -93,7 +100,8 @@ export default function VisionMissionSection() {
           <motion.div
             className="bg-white p-6 shadow-lg rounded-lg text-center"
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             <h4 className="text-xl font-semibold text-[#FF9A25] mb-4">Safety</h4>
@@ -105,7 +113,8 @@ export default function VisionMissionSection() {
           <motion.div
             className="bg-white p-6 shadow-lg rounded-lg text-center"
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             <h4 className="text-xl font-semibold text-[#FF9A25] mb-4">Customer Satisfaction</h4>
@@ -119,14 +128,16 @@ export default function VisionMissionSection() {
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
           <h3 className="text-3xl font-semibold text-[#FF9A25] mb-6">Build Your Dream with Us</h3>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-gray-700">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
               <h4 className="text-2xl font-bold text-[#FF9A25]">25+</h4>
@@ -134,7 +145,8 @@ export default function VisionMissionSection() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <h4 className="text-2xl font-bold text-[#FF9A25]">25+</h4>
@@ -142,7 +154,8 @@ export default function VisionMissionSection() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
               <h4 className="text-2xl font-bold text-[#FF9A25]">1M+</h4>
@@ -150,7 +163,8 @@ export default function VisionMissionSection() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
               <h4 className="text-2xl font-bold text-[#FF9A25]">1520+</h4>
