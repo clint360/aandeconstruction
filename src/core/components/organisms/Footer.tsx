@@ -22,17 +22,17 @@ const Footer = () => {
           <ul className="mt-4 space-y-2">
             <li><Link href="/about" className="text-gray-400 hover:text-[#FF9A25] transition">About Us</Link></li>
             <li><Link href="/contact" className="text-gray-400 hover:text-[#FF9A25] transition">Contact</Link></li>
-            <li><Link href="/faq" className="text-gray-400 hover:text-[#FF9A25] transition">FAQ</Link></li>
-            <li><Link href="/privacy-policy" className="text-gray-400 hover:text-[#FF9A25] transition">Privacy Policy</Link></li>
+            <li><Link href="/" className="text-gray-400 hover:text-[#FF9A25] transition">FAQ</Link></li>
+            <li><Link href="/" className="text-gray-400 hover:text-[#FF9A25] transition">Privacy Policy</Link></li>
           </ul>
         </div>
 
         {/* Column 3 - Contact Info & Socials */}
         <div>
           <h3 className="text-lg font-semibold text-[#FF9A25]">Contact Us</h3>
-          <p className="mt-4 text-gray-400">123 Street Name, City, Country</p>
+          <p className="mt-4 text-gray-400">Bamenda, Mile 2, Nkwen</p>
           <p className="text-gray-400">Email: support@example.com</p>
-          <p className="text-gray-400">Phone: +123 456 789</p>
+          <p className="text-gray-400">Phone: +237 6 80 61 23 60</p>
 
           {/* Social Icons */}
           <div className="flex space-x-4 mt-4">
@@ -45,7 +45,7 @@ const Footer = () => {
 
       {/* Copyright Line */}
       <div className="text-center mt-8 text-gray-500 border-t border-gray-700 pt-4">
-        © {new Date().getFullYear()} Your Company Name. All Rights Reserved.
+        © {new Date().getFullYear()} A and E Construction Company. All Rights Reserved.
       </div>
     </footer>
   );
