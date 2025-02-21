@@ -10,7 +10,7 @@ export default function VisionMissionSection() {
         {/* Title Section */}
         <motion.h2
           className="text-4xl font-semibold text-[#FF9A25] mb-12"
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1 }}
