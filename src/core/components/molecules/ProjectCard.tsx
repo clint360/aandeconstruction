@@ -1,8 +1,16 @@
+"use client"
 // components/ProjectCard.js
 import { useState } from 'react';
+import { FaChevronCircleLeft, FaChevronCircleRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-const ProjectCard = ({ title, location, images }: any) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+interface ProjectCardTypes {
+    title: string;
+    location: string;
+    images: string[]
+}
+
+const ProjectCard = ({ title, location, images }: ProjectCardTypes) => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -15,27 +23,29 @@ const ProjectCard = ({ title, location, images }: any) => {
   };
 
   return (
-    <div className="relative max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden">
-      <div className="relative">
-        <div className="flex overflow-hidden">
-          <img 
-            src={images[currentImageIndex]} 
-            alt={`Project Image ${currentImageIndex}`} 
-            className="w-full h-auto transition-transform duration-500 ease-in-out transform" 
-          />
-        </div>
-
-        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-center">
-          <h3 className="text-white text-xl font-bold">{title}</h3>
-          <p className="text-white text-sm italic">{location}</p>
+    <div className="relative max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden h-96">
+      <div
+        className="w-full h-full bg-cover bg-center projectcard"
+        style={{ backgroundImage: `linear-gradient(#ffffff00, #000000ee), url(${images[currentImageIndex]})` }}
+      >
+        <div className="absolute bottom-0 left-0 right-0 p-4 text-center text-white">
+          <h3 className="text-xl font-bold">{title}</h3>
+          <p className="text-sm italic">{location}</p>
         </div>
       </div>
 
-      <div className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 cursor-pointer" onClick={handlePrev}>
-        &lt;
+      {/* Navigation Arrows */}
+      <div
+        className="absolute text-2xl top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 cursor-pointer rounded-full"
+        onClick={handlePrev}
+      >
+        <FaChevronLeft />
       </div>
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 cursor-pointer" onClick={handleNext}>
-        &gt;
+      <div
+        className="absolute text-2xl top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 cursor-pointer rounded-full"
+        onClick={handleNext}
+      >
+        <FaChevronRight />
       </div>
     </div>
   );
