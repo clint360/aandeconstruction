@@ -1,5 +1,4 @@
 "use client"
-import Button from '@/core/components/atoms/Button'
 import { BreadcrumbImage } from '@/core/components/molecules/BreadcrumbImage'
 import Footer from '@/core/components/organisms/Footer'
 import Navbar from '@/core/components/organisms/Navbar'
