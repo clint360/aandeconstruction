@@ -14,7 +14,7 @@ export const projectData = [
     },
     {
       title: 'Commercial Building in Tiko',
-      location: 'Toll Gate, Tiko, Cmr',
+      location: 'Toll Gate, Tiko, Cameroon',
       images: [
         '/images/projects/tikotollgate/1.jpg',
         '/images/projects/tikotollgate/2.jpg',

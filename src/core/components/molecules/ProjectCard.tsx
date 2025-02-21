@@ -26,7 +26,7 @@ const ProjectCard = ({ title, location, images }: ProjectCardTypes) => {
     <div className="relative max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden h-96">
       <div
         className="w-full h-full bg-cover bg-center projectcard"
-        style={{ backgroundImage: `linear-gradient(#ffffff00, #000000ee), url(${images[currentImageIndex]})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, transparent 0%,rgba(255, 153, 37, 0) 50%, #000000 100%), url(${images[currentImageIndex]})` }}
       >
         <div className="absolute bottom-0 left-0 right-0 p-4 text-center text-white">
           <h3 className="text-xl font-bold">{title}</h3>
