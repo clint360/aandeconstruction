@@ -87,22 +87,26 @@ a {
   font-size: 3.5rem;
 }
 
+.descriptionfontsize {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 670px) {
   .smallheadtag {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .biggerheadtag {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding: 0px;
   }
-
+  .descriptionfontsize {
+    font-size: 0.75rem;
+  }
   .navbar {
     padding: 0 20px;
   }
 }
 
-.descriptionfontsize {
-  font-size: 1rem;
-}
 
 .overlaystyle {
   background: rgba(0, 0, 0, 0.863);

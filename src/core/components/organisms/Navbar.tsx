@@ -41,21 +41,20 @@ const Navbar = () => {
                 <Link href="/">
                     <Image src={color === "transparent" ? logo : logoi}
                         alt="A&E Logo"
-                        width={100}
-                        height={50}
+                        className="w-24"
                         priority />
                 </Link>
                 <ul style={{ color: `${textColor}` }} className="hidden sm:flex items-center">
-                    <li className="p-4 group-hover:text-[#FF9A25]">
+                    <li className="p-4 hover:text-[#FF9A25]">
                         <Link href="/" >Home</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-4 hover:text-[#FF9A25]">
                         <Link href="/about">About</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-4 hover:text-[#FF9A25]">
                         <Link href="/services">Services</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-4 hover:text-[#FF9A25]">
                         <Link href="/projects">Projects</Link>
                     </li>
                     <li className="p-4">

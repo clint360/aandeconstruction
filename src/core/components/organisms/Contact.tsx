@@ -24,17 +24,17 @@ const Contact = () => {
       >
         <div className="mb-4">
           <label className="block text-gray-700 font-medium">Name</label>
-          <input type="text" className="w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-[#FF9A25] focus:outline-none" placeholder="Your Name" />
+          <input type="text" className="w-full bg-white mt-1 p-3 border rounded-md focus:ring-2 focus:ring-[#FF9A25] focus:outline-none" placeholder="Your Name" />
         </div>
 
         <div className="mb-4">
           <label className="block text-gray-700 font-medium">Email</label>
-          <input type="email" className="w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-[#FF9A25] focus:outline-none" placeholder="Your Email" />
+          <input type="email" className="w-full bg-white mt-1 p-3 border rounded-md focus:ring-2 focus:ring-[#FF9A25] focus:outline-none" placeholder="Your Email" />
         </div>
 
         <div className="mb-4">
           <label className="block text-gray-700 font-medium">Message</label>
-          <textarea className="w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-[#FF9A25] focus:outline-none" rows={4} placeholder="Your Message"></textarea>
+          <textarea className="w-full mt-1 p-3 border bg-white rounded-md focus:ring-2 focus:ring-[#FF9A25] focus:outline-none" rows={4} placeholder="Your Message"></textarea>
         </div>
 
         <motion.button

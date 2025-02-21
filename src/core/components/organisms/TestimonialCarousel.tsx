@@ -20,8 +20,8 @@ const Testimonials = () => {
           loop={true}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          modules={[Autoplay, Pagination]}
-          className="max-w-6xl px-4"
+          modules={[Autoplay]}
+          className="max-w-6xl px-8"
         >
           {testimonials.map((testimonial, i) => (
             <SwiperSlide key={i} className="flex justify-center m-2">

@@ -10,7 +10,7 @@ export default function VisionMissionSection() {
         {/* Title Section */}
         <motion.h2
           className="text-4xl font-semibold text-[#FF9A25] mb-12"
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1 }}
@@ -20,7 +20,7 @@ export default function VisionMissionSection() {
 
         {/* Vision */}
         <motion.div
-          className="bg-white p-8 shadow-lg rounded-lg mb-10"
+          className="bg-white p-8  rounded-lg mb-10"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.3 }}
@@ -36,7 +36,7 @@ export default function VisionMissionSection() {
 
         {/* Mission */}
         <motion.div
-          className="bg-white p-8 shadow-lg rounded-lg mb-10"
+          className="bg-white p-8  rounded-lg mb-10"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.3 }}
@@ -51,6 +51,7 @@ export default function VisionMissionSection() {
         </motion.div>
 
         {/* Values */}
+        <h3 className="text-2xl font-semibold text-[#FF9A25] mb-4">Our Values</h3>
         <motion.div
           className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12"
           initial={{ opacity: 0 }}
@@ -120,6 +121,18 @@ export default function VisionMissionSection() {
             <h4 className="text-xl font-semibold text-[#FF9A25] mb-4">Customer Satisfaction</h4>
             <p className="text-gray-700">
               Our clients’ needs and satisfaction come first. We are dedicated to delivering exceptional results that meet or exceed their expectations.
+            </p>
+          </motion.div>
+          <motion.div
+            className="bg-white p-6 shadow-lg rounded-lg text-center"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <h4 className="text-xl font-semibold text-[#FF9A25] mb-4">Loyalty</h4>
+            <p className="text-gray-700">
+              We are Loyal and dedicated to delivering exceptional results that meet or exceed their expectations.
             </p>
           </motion.div>
         </motion.div>

@@ -35,15 +35,15 @@ const Hero = () => {
   <div className=" max-w-[1240px] m-auto absolute inset-0 flex justify-center items-center text-center px-4">
     <div className="text-white">
       {/* Title with fade-in animation */}
-      <h1 className="smallheadtag font-bold text-[#FF9A25] mb-4 fade-in fade-in-delay-1">
+      <h1 className="smallheadtag font-bold text-[#FF9A25] mb-4">
         Welcome to A and E Construction Company
       </h1>
       {/* Sub-Title with fade-in animation */}
-      <h2 className="biggerheadtag font-extrabold text-white mb-6 fade-in fade-in-delay-2">
+      <h2 className="biggerheadtag font-extrabold text-white mb-6">
         Building Excellence, Delivering Results
       </h2>
       {/* Description with fade-in animation */}
-      <p className="descriptionfontsize max-w-4xl mx-auto text-white fade-in fade-in-delay-3 pb-6">
+      <p className="descriptionfontsize max-w-4xl mx-auto text-white pb-6">
         At A & E Construction, we are a leading construction company based in Cameroon,
         dedicated to providing top-notch construction services and associated solutions. With
         years of industry experience, a team of skilled professionals, and a commitment to quality,
