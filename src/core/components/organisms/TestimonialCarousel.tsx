@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import testimonials from "@/core/data/testimonials"; // Import testimonial data
 
 const Testimonials = () => {
@@ -20,8 +20,8 @@ const Testimonials = () => {
           loop={true}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          modules={[Autoplay, Pagination]}
-          className="max-w-6xl px-4"
+          modules={[Autoplay]}
+          className="max-w-6xl px-8"
         >
           {testimonials.map((testimonial, i) => (
             <SwiperSlide key={i} className="flex justify-center m-2">

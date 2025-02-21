@@ -35,27 +35,26 @@ const Navbar = () => {
     return (
         <div
             style={{ backgroundColor: `${color}` }}
-            className="fixed left-0 top-0 w-full z-10 ease-in duration-300 navbar "
+            className="fixed left-0 top-0 w-full z-10 ease-in duration-200 navbar "
         >
             <div className="max-w-[1240px] m-auto flex justify-between items-center text-white pt-2 sm:p-4">
                 <Link href="/">
                     <Image src={color === "transparent" ? logo : logoi}
                         alt="A&E Logo"
-                        width={100}
-                        height={50}
+                        className="w-24"
                         priority />
                 </Link>
                 <ul style={{ color: `${textColor}` }} className="hidden sm:flex items-center">
-                    <li className="p-4 group-hover:text-[#FF9A25]">
+                    <li className="p-4 hover:text-[#FF9A25]">
                         <Link href="/" >Home</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-4 hover:text-[#FF9A25]">
                         <Link href="/about">About</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-4 hover:text-[#FF9A25]">
                         <Link href="/services">Services</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-4 hover:text-[#FF9A25]">
                         <Link href="/projects">Projects</Link>
                     </li>
                     <li className="p-4">

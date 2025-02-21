@@ -32,7 +32,7 @@ export default function ServicesSection() {
               className="bg-white rounded-lg shadow-md overflow-hidden"
               whileHover={{ scale: 1.05 }}
             >
-              <Image src={service.image} alt={service.title} className="w-full h-40 object-cover" />
+              <Image src={service.image} alt={service.title} className="w-full h-40 object-cover" width={100} height={100} />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 mt-2">{service.description}</p>
