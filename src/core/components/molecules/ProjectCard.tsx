@@ -69,7 +69,7 @@ const ProjectCard = ({ title, location, images }: ProjectCardTypes) => {
       {/* Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50"
+          className="fixed inset-0 bg-black flex justify-center items-center z-50"
           onClick={handleOverlayClick} 
         >
           <div className="relative w-full h-full">
